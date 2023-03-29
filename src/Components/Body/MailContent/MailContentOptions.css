@@ -1,0 +1,35 @@
+.mailContentOptions__container {
+    width: 100%;
+    background-color: #fff;
+    position: sticky;
+    top: 65px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.ticon__button {
+    width: 40px !important;
+    height: 40px !important;
+}
+.ticon__button {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.ticon {
+    width: 18px !important;
+    height: 18px !important;
+    color: rgb(100, 100, 100);
+    padding: 5px;
+}
+
+
+.border__right {
+    border-right: 0.2px solid rgb(229, 228, 228);
+    height: 20px;
+    margin: 0 10px;
+}
+

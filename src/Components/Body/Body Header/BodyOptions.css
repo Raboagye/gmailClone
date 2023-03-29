@@ -1,0 +1,25 @@
+.iconButton {
+    width: 20px !important;
+    height: 35px !important;
+    border-radius: 0 !important;
+}
+
+.iconButton2 {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.body__icon {
+    width: 18px !important;
+    height: 18px !important;
+    color: rgb(100, 100, 100);
+    padding: 5px;
+    /* background-color: gray; */
+}
+.body__icon2 {
+    width: 18px !important;
+    height: 18px !important;
+    color: rgb(100, 100, 100);
+    padding: 5px 5px;
+    /* background-color: brown; */
+}

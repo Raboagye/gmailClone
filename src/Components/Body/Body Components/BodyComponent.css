@@ -1,0 +1,112 @@
+.bodyComponent {
+    display: flex;
+    font-size: 14px;
+}
+
+.bodyComponent__container1 {
+    width: max-content;
+    padding: 0 10px 0 7px;
+}
+
+.bodyComponent__container1:hover {
+    background-color: rgb(245, 243, 243);
+}
+
+.bodyComponent__container2 {
+    width: max-content;
+    padding: 0 10px;
+}
+
+.bodyComponent__container2:hover {
+    background-color: rgb(245, 243, 243);
+}
+
+.bodyComponent__container3 {
+    width: max-content;
+    padding: 0 10px;
+}
+.bodyComponent__container3:hover {
+    background-color: rgb(245, 243, 243);
+}
+
+
+.bodyComponent__content1 {
+    display: flex;
+    align-items:flex-end;
+    width: 200px;
+    padding: 15px 7px;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+
+.bodyComponent__content11 {
+    display: flex;
+    align-items:flex-end;
+    width: 200px;
+    padding: 15px 7px;
+    color: #0b57d0;
+    border-bottom: 3.5px solid #0b57d0;
+    cursor: pointer;
+}
+
+
+.bodyComponent__content22 {
+    display: flex;
+    align-items:flex-end;
+    width: 200px;
+    padding: 15px 7px;
+    color: #0b57d0;
+    border-bottom: 3.5px solid #0b57d0;
+    cursor: pointer;
+}
+
+
+.bodyComponent__content33 {
+    display: flex;
+    align-items:flex-end;
+    width: 200px;
+    padding: 15px 7px;
+    color: #0b57d0;
+    border-bottom: 3.5px solid #0b57d0;
+    cursor: pointer;
+}
+
+
+.bodyComponent__content2 {
+    display: flex;
+    align-items:flex-end;
+    width: 200px;
+    padding: 15px 7px;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+.bodyComponent__content3 {
+    display: flex;
+    align-items:flex-end;
+    width: 200px;
+    padding: 15px 7px;
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+.bodyComponent__icon1 {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 20px;
+    margin-left: 3px !important;
+}
+.bodyComponent__icon2 {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 20px;
+}
+.bodyComponent__icon3 {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 20px;
+}
+
+.bodyComponent h4 {
+    font-weight: 500;
+}

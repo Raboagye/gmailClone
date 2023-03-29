@@ -1,0 +1,141 @@
+.sideBar {
+    flex: 0.195;
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+}
+
+
+.sideBar__container {
+    position: sticky;
+    top: 65px;
+}
+
+
+.compose {
+    padding: 15px 20px !important;
+    background-color: #c2e7ff !important;
+    color: rgb(60, 60, 60) !important;
+    border-radius: 15px !important;
+    margin-left: 8px !important;
+    text-transform: capitalize !important;
+    margin-top: 2px !important;
+}
+
+
+
+.compose:hover {
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.create {
+    margin-right:10px !important ;
+    width: 25px !important;
+    height: 25px !important;
+}
+
+.gmail__options {
+    margin-top: 15px;
+}
+
+.categories {
+    display: flex;
+    padding-left: 5px;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    align-items: center;
+}
+
+.categories:hover {
+    border-radius: 0 30px 30px 0;
+    background-color: rgb(228, 231, 231);
+}
+
+.categories__option {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+
+}
+
+.categories__option2 {
+    margin-left: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(120, 119, 119);
+
+}
+
+.play__icon {
+    width: 20px !important;
+    color: gray;
+}
+
+
+.input__icon {
+    width: 18px !important;
+    height: 20px !important;
+    color: gray;
+}
+
+.options__categories {
+    display: flex;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 6px;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 6px;
+}
+
+.options__categories:hover {
+    border-radius: 0 30px 30px 0;
+    background-color: #eaebee;;
+}
+
+.icons__categories {
+    width: 20px !important;
+    height: 20px !important;
+    color: gray;
+    
+}
+.words {
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-left: 13px;
+    font-weight: 600;
+}
+
+.numbers {
+    position: absolute;
+    right: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(120, 119, 119);
+}
+
+.more__container {
+    display: flex;
+    padding-left: 20px;
+    cursor: pointer;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    align-items: center;
+    border-radius: 0 30px 30px 0;
+    background-color: #eaebee;
+}
+
+.down__arrow {
+    width: 25px !important;
+    height: 20px !important;
+    color: gray;
+}
+
+.more {
+    margin-left: 13px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(120, 119, 119);
+}

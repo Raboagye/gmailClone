@@ -1,0 +1,126 @@
+.messages__container {
+    display: flex;
+    align-items: center;
+    flex: 0.95;
+    border-bottom: 1px solid rgb(235, 234, 234);
+    position: relative;
+    width: 100%;
+}
+
+
+.messages__left {
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+}
+
+.icon__container {
+    margin-right: -10px !important;
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.icon__container1 {
+    padding-left: 0px !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin-right: -5px !important;
+
+}
+
+.icon1 {
+    visibility: hidden;
+}
+
+.icon11 {
+    color: rgb(190, 188, 188);
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 0 !important;
+}
+
+
+
+.icon222 {
+    color: rgb(214, 212, 212);
+    width: 18px !important;
+    height: 18px !important;
+    margin-left: -4px !important;
+}
+.icon222222 {
+    color: rgb(97, 96, 96);
+    width: 18px !important;
+    height: 18px !important;
+    margin-left: -4px !important;
+}
+
+.icon22 {
+    color: rgb(214, 212, 212);
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.icon2222 {
+    color: rgb(97, 96, 96);
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.messages__left h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.messages__middle {
+    
+    width:calc(60%);
+}
+
+.messages__middle h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 76px;
+    text-overflow:ellipsis;
+    width:calc(90%);
+    white-space: nowrap;
+    overflow: hidden;
+}
+.messages__middle span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.messages__end {
+    position: absolute;
+    right: 50px;
+    /* margin-left: 10px; */
+}
+
+.messages__end2 {
+    display: none;
+}
+.messages__end h4 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.messages__endIcons {
+    display: none;
+}
+
+.messages__endIcons2 {
+    position: absolute;
+    right: 40px;
+}
+
+.icon5 {
+    color: rgb(97, 96, 96);
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.end__iconButton {
+    width: 35px !important;
+    height: 35px !important;
+}

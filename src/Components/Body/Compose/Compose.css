@@ -1,0 +1,103 @@
+.compose__container {
+    position: fixed;
+    right: 70px;
+    top: 32vh;
+    width: 75vh;
+    z-index: 998;
+    height: 68vh;
+    background-color: #fff;
+    box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; 
+}
+
+.compose__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 15px;
+    background-color: #f2f6fc;
+    z-index: 999;
+}
+
+.compose__heading h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.compose__iconButton {
+    border-radius: 0px !important;
+    height: 19px !important;
+    width: 19px !important;
+}
+
+.compose__close {
+    width: 17px !important;
+    height: 17px !important;
+}
+
+
+
+.compose__recipient {
+    margin: 10px;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    margin-left: 15px;
+}
+
+.compose__recipient input {
+    border: none;
+    outline: none;
+    padding: 0px 0px 10px 0px;
+    font-size: 14px;
+    width: 100%;
+}
+.compose__subject {
+    margin: 10px;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    margin-left: 15px;
+}
+
+.compose__subject input {
+    border: none;
+    outline: none;
+    padding: 0px 0px 10px 0px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.compose__message {
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.compose__message textarea {
+    width: 100%;
+    min-height: 36vh;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.compose__button button {
+    margin-left: 15px;
+    border: none;
+    padding: 10px 25px;
+    background-color: #0b57d0;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 550;
+    font-size: 14px;
+    cursor: pointer;
+    position: fixed;
+    top: 94vh;
+}
+
+.error__message {
+    font-size: 12px;
+    color: red;
+    text-align: right;
+}
+
+
+

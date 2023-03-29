@@ -1,0 +1,96 @@
+.body__body {
+    flex: 0.98;
+    background-color: #fff;
+    padding-left: 0;
+    margin-right: 60px;
+    border-radius: 20px;
+    width: 70%;
+    margin-left: 0;
+    min-height: 91vh;
+}
+
+.body__top {
+    width: 100%;
+    background-color: #f6f8fc;
+    position: sticky;
+    top: 65px;
+    z-index: 5;
+}
+
+.top__icons {
+    display: flex;
+    position: sticky;
+    top:65px;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    /* border-bottom: 1px solid rgb(230, 229, 229); */
+    margin-right: 70px;
+    margin-bottom: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.top__icons2 {
+    display: flex;
+    position: sticky;
+    top:65px;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    border-bottom: 1px solid rgb(230, 229, 229);
+    margin-right: 70px;
+    margin-bottom: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.topIcon__one {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 0;
+}
+
+.topIcon__two {
+    display: flex;
+    margin-left: 15px;
+}
+
+.body__right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+}
+
+.digitButton {
+    width: max-content !important;
+    border-radius: 5px !important;
+}
+
+.digits h4 {
+    font-size: 12.5px;
+    font-weight: 500;
+}
+
+.arrows {
+    display: flex;
+}
+
+.arrow {
+    width: 20px !important;
+    height: 20px !important;
+}
+.middle__heading {
+    border-bottom: 1px solid rgb(235, 234, 234);
+}
+
+.messages {
+    width: 100%;
+}
+
+.containerr__message:hover {
+    box-shadow: 0px 1.5px 2px 0.7px rgba(0, 0, 0, 0.3);
+    border-bottom: 0px solid rgb(235, 234, 234);
+    cursor: pointer;
+}
