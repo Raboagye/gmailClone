@@ -21,26 +21,27 @@ import StarRateOutlinedIcon from '@mui/icons-material/StarRateOutlined';
 import ReplyOutlinedIcon from '@mui/icons-material/ReplyOutlined';
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import MailContentOptions2 from "./MailContentOptions2";
 
 
-const MailContent = () => {
+const MailContent = ({menuIcon}) => {
     const selectedMail = useSelector((state)=>state.mail.selectedMail)
     const user = useSelector((state)=>state.user.user)
 
     const navigate = useNavigate()
     return ( 
-        <div className="mailContent__container">
+        <div className={menuIcon? "mailContent__container" : "mailContent__extend"}>
             <div className="top__part">
-                <div className="mailContent__top" onClick={() => navigate("/")}>
+                <div className="mailContent__top1" onClick={() => navigate("/")}>
                     <MailContentOptions Ticon1={ArrowBackIcon} />
                 </div>
-                <div className="mailContent__middle">
+                <div className="mailContent__middle1">
                     <MailContentOptions Ticon3={DeleteIcon} Ticon1={ArchiveIcon} Ticon2={ReportGmailerrorredIcon} vertical={true} />
                 </div>
-                <div className="mailContent__middle">
+                <div className="mailContent__middle2">
                     <MailContentOptions Ticon1={MailOutlineIcon} Ticon2={AccessTimeIcon} Ticon3={AddTaskIcon} vertical={true} />
                 </div>
-                <div className="mailContent__top">
+                <div className="mailContent__top2">
                     <MailContentOptions Ticon1={DriveFileMoveOutlinedIcon} Ticon2={LabelOutlinedIcon} Ticon3={MoreVertOutlinedIcon} />
                 </div>
 
@@ -96,9 +97,9 @@ const MailContent = () => {
                     </div>
                 </div>
                 <div className="time">
-                    <h4>{selectedMail?.time}</h4>
+                    <h4>{selectedMail?.todayTime}</h4>
                     <div className="mail__icons">
-                        <MailContentOptions Ticon1={StarRateOutlinedIcon} Ticon2={ReplyOutlinedIcon} Ticon3={MoreVertOutlinedIcon} />
+                        <MailContentOptions2 Ticon1={StarRateOutlinedIcon} Ticon2={ReplyOutlinedIcon} Ticon3={MoreVertOutlinedIcon} />
                     </div>
                     
                 </div>

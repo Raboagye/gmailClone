@@ -15,7 +15,7 @@ import { db } from "../../firebase";
 import { useEffect, useState } from "react";
 
 
-const Body = () => {
+const Body = ({menuIcon}) => {
     const [email, setEmail] = useState([])
 
     const truncate = (str) => {
@@ -40,7 +40,7 @@ const Body = () => {
 
 
     return ( 
-        <div className={"body__body"}>
+        <div className={menuIcon? "body__body" : "body__extend"}>
             <div className="body__top" >
                 <div className={scrolling? "top__icons" : "top__icons"}>
                     <div className="topIcon__one">
@@ -77,7 +77,7 @@ const Body = () => {
                 {email.map(({id, data: {to, subject, message, timestamp}})=> {
                     return (
                         <div className="containerr__message">
-                            <Messages id={id} key={id} title={truncate(to)} subject={subject} message={message} time={new Date(timestamp?.seconds * 1000).toUTCString()} />
+                            <Messages id={id} key={id} title={truncate(to)} subject={subject} message={message} time={new Date(timestamp?.seconds * 1000).toUTCString()} todayTime={(d => new Date().getDate() === d.getDate() ? d.toLocaleString("en-US", { hour: "numeric", minute: "numeric", hour12: true }) : d.toLocaleString("default", { month: "short", day: "numeric" }))(timestamp.toDate())} />
                         </div>
                     )
                 })}

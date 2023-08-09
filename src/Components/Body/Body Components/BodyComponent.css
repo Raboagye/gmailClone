@@ -110,3 +110,35 @@
 .bodyComponent h4 {
     font-weight: 500;
 }
+
+@media (max-width: 795px) {
+    .bodyComponent__container2 {
+        display: none;
+    }
+
+    .bodyComponent__container3 {
+        display: none;
+    }
+
+    .bodyComponent__content11 {
+        color: rgb(100, 100, 100);
+        border-bottom: none;
+    }
+
+    .bodyComponent__content11 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 11px;
+        margin-left: 4px;
+    }
+    .bodyComponent__content1 h4 {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 11px;
+        
+    }
+
+    .bodyComponent__icon1 {
+        display: none !important;
+    }
+}

@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { scrollActivated } from "../../Redux/scrollSlice";
 import { useNavigate } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = ({menuClicked}) => {
     const navigate = useNavigate()
     const scrolling = useSelector((state) => state.scroll.scrollActive)
 
@@ -40,7 +40,7 @@ const NavBar = () => {
     return ( 
         <div className={scrolling?"navBar":"navBar"} onMouseOver={() => dispatch(scrollActivated())}>
             <div className="navBar__left">
-                <IconButton>
+                <IconButton className="outsideMenu" onClick={menuClicked}>
                     <MenuIcon />
                 </IconButton>
                 <img  className="navBar__logo" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Gmail2020.logo.png" alt="gmail logo" onClick={()=> navigate("/")} />  
@@ -49,22 +49,31 @@ const NavBar = () => {
                 <IconButton>
                     <SearchIcon className="searchIcon"/>
                 </IconButton>
+
+                <IconButton >
+                    <MenuIcon className="inputMenu" onClick={menuClicked} />
+                </IconButton>
+
                 <input value={enterInput} className={inputClicked? "input2" : "input"} type="text" placeholder="Search mail" onChange={(e)=>setEnterInput(e.target.value)} onClick={()=>setInputClicked(true)}/>
                 <IconButton className={!enterInput? "closeIcon2" : "closeIcon"} onClick={()=>setEnterInput("")}>
                     <CloseIcon className="close"/>
                 </IconButton>
-                <IconButton >
+                <IconButton className="listIcon__container" >
                     <ListIcon className="listIcon"/>
+                </IconButton>
+
+                <IconButton className="inputAvatar__container">
+                    <Avatar className="inputAvatar">R</Avatar>
                 </IconButton>
             </div>
             <div className="navBar__right">
-                <IconButton>
+                <IconButton className="help">
                     <HelpOutlineIcon />
                 </IconButton>
-                <IconButton>
+                <IconButton className="settings">
                     <SettingsIcon />
                 </IconButton>
-                <IconButton>
+                <IconButton className="apps">
                     <AppsIcon />
                 </IconButton>
                 <IconButton>

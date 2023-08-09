@@ -7,9 +7,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MailContent from './Components/Body/MailContent/MailContent';
 import LoginPage from './Components/Pages/LoginPage';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { auth } from './firebase';
 import { login, logout } from './Redux/userSlice';
+import SideBar2 from './Components/SideBar/sideBar2';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
   const scrolling = useSelector((state) => state.scroll.scrollActive)
   const composeMail = useSelector((state) => state.mail.openCompose)
   const user = useSelector((state) => state.user.user)
+
+  const [menu, setMenu] = useState(false)
 
   useEffect(()=> {
     auth.onAuthStateChanged((user) => {
@@ -39,17 +42,19 @@ function App() {
         <LoginPage />
       ) : (
         <div className={ "app"}>
-          <NavBar />
+          <NavBar menuClicked={()=>setMenu(!menu)} />
           <div className={'body'}>
-            <SideBar />
+            <SideBar menuIcon={menu}/>
+            <SideBar2 menuIcon={menu} menuClicked={()=>setMenu(!menu)}/>
             <Routes>
-              <Route path="/" element={<Body />} />
-              <Route path="/mail-content" element={<MailContent />} />
+              <Route path="/" element={<Body menuIcon={menu}/>} />
+              <Route path="/mail-content" element={<MailContent menuIcon={menu}/>} />
             </Routes>
 
           </div>
           {composeMail && <Compose />}
           <div className='app__container'></div>
+          {console.log(menu)}
 
         </div>
       )}

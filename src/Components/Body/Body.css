@@ -9,6 +9,18 @@
     min-height: 91vh;
 }
 
+.body__extend {
+    flex: 0.88;
+    background-color: #fff;
+    /* background-color: red; */
+    padding-left: 0;
+    margin-right: 84px;
+    border-radius: 20px;
+    width: 88%;
+    min-height: 91vh;
+    margin-left: auto;
+}
+
 .body__top {
     width: 100%;
     background-color: #f6f8fc;
@@ -60,7 +72,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    right: 40px;
+    right: 10px;
 }
 
 .digitButton {
@@ -93,4 +105,31 @@
     box-shadow: 0px 1.5px 2px 0.7px rgba(0, 0, 0, 0.3);
     border-bottom: 0px solid rgb(235, 234, 234);
     cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .body__extend {
+        /* margin-right: 0; */
+        /* margin-left: 0; */
+        margin: auto;
+    }
+
+    .body__body {
+        margin: auto;
+        flex: 0.88;
+    }
+}
+
+@media (max-width: 547px) {
+    .body__body {
+        flex: 0.96;
+    }
+
+    .body__extend {
+        flex: 0.96
+    }
+
+    .digitButton {
+        display: none !important;
+    }
 }

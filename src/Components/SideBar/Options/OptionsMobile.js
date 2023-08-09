@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import "./Options.css"
+import "./OptionsMobile.css"
 
-const Options = ({menuIcon, Icon, text, value}) => {
+const OptionsMobile = ({Icon, text, value}) => {
     const [clicked, setClicked] = useState(false)
 
     const reference = useRef(null)
@@ -33,9 +33,9 @@ const Options = ({menuIcon, Icon, text, value}) => {
             <div ref={reference} className={clicked ? "container2" : "container"} onClick={() => setClicked(true)}>
                 <div className={"options"}>
                     {<Icon className={classname()} />}
-                    {menuIcon && <h4 className={value ? "text2" : "text"}>{text}</h4>}
+                    {<h4 className={value ? "text2" : "text"}>{text}</h4>}
                 </div>
-                {menuIcon && <div className={clicked ? "value2" : "value"}>
+                {<div className={clicked ? "value2" : "value"}>
                     {value}
                 </div>}
             </div>
@@ -45,4 +45,4 @@ const Options = ({menuIcon, Icon, text, value}) => {
      );
 }
  
-export default Options;
+export default OptionsMobile;

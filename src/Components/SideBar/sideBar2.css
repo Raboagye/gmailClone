@@ -1,34 +1,44 @@
-.sideBar {
-    /* flex: 0.195; */
+.sideBar2 {
+    width: 25%;
+    min-width: 250px;
     padding-right: 20px;
-    position: sticky;
-    top: 0;
-    min-width: 243.7px;
-    transition: all 0.1s;
-    /* transform: translateX(0); */
-    /* background-color: brown; */
-    min-height: 100vh;
-}
-
-.sideBarShow {
-    /* position: sticky; */
-    top: 0;
-    /* width: 50px; */
-    /* transform: translateX(-300px); */
-    transition: all 0.1s;
+    position: fixed;
+    z-index: 99999;
+    top: 65px;
+    display: none;
     background-color: #f6f8fc;
     min-height: 100vh;
-    /* display: none; */
+    transform: translateX(0);
+    transition: all 0.75s;
+}
+
+.sideBar3 {
+    width: 25%;
+    min-width: 250px;
+    padding-right: 20px;
+    position: fixed;
+    z-index: 99999;
+    top: 65px;
+    display: none;
+    background-color: #f6f8fc;
+    min-height: 100vh;
+    transform: translateX(-300px);
+    transition: all 0.75s;
 }
 
 
-.sideBar__container {
+.sideBar__container2 {
     position: sticky;
     top: 65px;
+    display: none;
+    /* background-color: blueviolet; */
+    min-height: 100vh;
+    width: 25%;
+    min-width: 250px;
 }
 
 
-.compose {
+.compose2 {
     padding: 15px 20px !important;
     background-color: #c2e7ff !important;
     color: rgb(60, 60, 60) !important;
@@ -37,35 +47,24 @@
     text-transform: capitalize !important;
     margin-top: 2px !important;
 }
-.composee {
-    padding: 15px 7px !important;
-    padding-right: 0px !important;
-    background-color: #c2e7ff !important;
-    color: rgb(60, 60, 60) !important;
-    border-radius: 15px !important;
-    margin-left: 8px !important;
-    text-transform: capitalize !important;
-    margin-top: 2px !important;
-}
 
 
 
-
-.compose:hover {
+.compose2:hover {
     box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
-.create {
+.create2 {
     margin-right:10px !important ;
     width: 25px !important;
     height: 25px !important;
 }
 
-.gmail__options {
+.gmail__options2 {
     margin-top: 15px;
 }
 
-.categories {
+.categories2 {
     display: flex;
     padding-left: 5px;
     cursor: pointer;
@@ -74,12 +73,12 @@
     align-items: center;
 }
 
-.categories:hover {
+.categories2:hover {
     border-radius: 0 30px 30px 0;
     background-color: rgb(228, 231, 231);
 }
 
-.categories__option {
+.categories__option3 {
     margin-left: 15px;
     font-size: 14px;
     font-weight: 600;
@@ -87,7 +86,7 @@
 
 }
 
-.categories__option2 {
+.categories__option4 {
     margin-left: 15px;
     font-size: 14px;
     font-weight: 500;
@@ -95,19 +94,19 @@
 
 }
 
-.play__icon {
+.play__icon2 {
     width: 20px !important;
     color: gray;
 }
 
 
-.input__icon {
+.input__icon2 {
     width: 18px !important;
     height: 20px !important;
     color: gray;
 }
 
-.options__categories {
+.options__categories2 {
     display: flex;
     position: relative;
     padding-left: 40px;
@@ -117,25 +116,25 @@
     padding-bottom: 6px;
 }
 
-.options__categories:hover {
+.options__categories2:hover {
     border-radius: 0 30px 30px 0;
     background-color: #eaebee;;
 }
 
-.icons__categories {
+.icons__categories2 {
     width: 20px !important;
     height: 20px !important;
     color: gray;
     
 }
-.words {
+.words2 {
     font-size: 14px;
     color: rgb(0, 0, 0);
     margin-left: 13px;
     font-weight: 600;
 }
 
-.numbers {
+.numbers2 {
     position: absolute;
     right: 10px;
     font-size: 13px;
@@ -143,7 +142,7 @@
     color: rgb(120, 119, 119);
 }
 
-.more__container {
+.more__container2 {
     display: flex;
     padding-left: 20px;
     cursor: pointer;
@@ -154,32 +153,29 @@
     background-color: #eaebee;
 }
 
-.down__arrow {
+.down__arrow2 {
     width: 25px !important;
     height: 20px !important;
     color: gray;
 }
 
-.more {
+.more2 {
     margin-left: 13px;
     font-size: 14px;
     font-weight: 500;
     color: rgb(120, 119, 119);
 }
 
-@media (max-width: 1400px) {
-    .sideBarShow {
-        margin-right: 20px;
-    }
-}
-
 
 @media (max-width: 1100px) {
-    .sideBar {
-        display: none;
+    .sideBar2 {
+        display: block;
+    }
+    .sideBar3 {
+        display: block;
     }
 
-    .sideBarShow {
-        display: none;
+    .sideBar__container2 {
+        display: block;
     }
 }

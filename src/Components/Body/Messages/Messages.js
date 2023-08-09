@@ -13,7 +13,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { selectMail } from "../../../Redux/mailSlice";
 
-const Messages = ({title, subject, message, time}) => {
+const Messages = ({title, subject, message, time, todayTime}) => {
     const [hover, setHover] = useState(false)
     const navigate = useNavigate()
 
@@ -25,7 +25,8 @@ const Messages = ({title, subject, message, time}) => {
             title,
             subject,
             message, 
-            time
+            time,
+            todayTime
         }))
 
         navigate("/mail-content")
@@ -49,24 +50,31 @@ const Messages = ({title, subject, message, time}) => {
     return ( 
         <div className="messages__cover" onClick={openMail}>
             <div ref={reference} className="messages__container" onMouseOver={() => setHover(true)}>
-                <div className="messages__left">
-                    <IconButton className="icon__container1">
-                        <DragIndicatorIcon className={hover ? "icon11" : "icon1"} />
-                        <CheckBoxOutlineBlankIcon className={hover ? "icon222222" : "icon222"} />
-                    </IconButton>
-                    <IconButton className="icon__container">
-                        <StarBorderPurple500Icon className={hover ? "icon2222" : "icon22"} />
-                    </IconButton>
-                    <IconButton className="icon__container">
-                        <LabelImportantOutlinedIcon className={hover ? "icon2222" : "icon22"} />
-                    </IconButton>
-                    <h4>{title}</h4>
+                <div className="message__leftMiddle">
+                    <div className="messages__left">
+                        <IconButton className="icon__container1">
+                            <DragIndicatorIcon className={hover ? "icon11" : "icon1"} />
+                            <CheckBoxOutlineBlankIcon className={hover ? "icon222222" : "icon222"} />
+                        </IconButton>
+                        <IconButton className="icon__container">
+                            <StarBorderPurple500Icon className={hover ? "icon2222" : "icon22"} />
+                        </IconButton>
+                        <IconButton className="icon__container">
+                            <LabelImportantOutlinedIcon className={hover ? "icon2222" : "icon22"} />
+                        </IconButton>
+                        <h4>{title}</h4>
+                    </div>
+                    <div className="messages__middle">
+                        <h4 className="m__desktop">{subject}<span> - {message}</span></h4>
+                        <h4 className="m__subject">{subject}</h4>
+                        <h4 className="m__content">{message}</h4>
+                    </div>
+
                 </div>
-                <div className="messages__middle">
-                    <h4>{subject}<span> - {message}</span></h4>
-                </div>
+                
                 <div className={hover ? "messages__end2" : "messages__end"}>
-                    <h4>{time}</h4>
+                    <h4 className="mobileTime">{todayTime}</h4>
+                    <h4 className="desktopTime">{time}</h4>
                 </div>
                 <div className={hover ? "messages__endIcons2" : "messages__endIcons"}>
                     <IconButton className="end__iconButton">
